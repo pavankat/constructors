@@ -1,12 +1,14 @@
-relating constructors
+# Constructors and Prototypes in Plain English
+
+This is a work in progress
+
+## When relating constructors to one another
 
 you need to determine the constructors that you will use
 
 and then the relationship between them
 
-
-
-tic tac toe
+### tic tac toe example
 
 	board
 		would have boxes inside
@@ -23,7 +25,7 @@ tic tac toe
 		horizontal: 0
 		vertical: 0
 		it can be either x, o or nothing
-		if clicked on it will be whatever the player is 
+		if selected, it will be whatever the player is 
 			unless it was already clicked on
 
 	board = {
@@ -46,7 +48,8 @@ tic tac toe
 		]
 	}
 
-classroom
+### classroom example
+
 
 	class
 		students : [student, student, student, student]
@@ -57,7 +60,7 @@ classroom
 	student
 		age: 
 
-hangman
+## hangman example
 	Word
 		word: "cat",
 		letters: [
@@ -78,40 +81,40 @@ hangman
 
 	wrong: a
 
-Word
-	word: 'dog'
-	letters: [
-		d Letter object
-		o Letter object
-		g Letter object
-	]
-	display: 
-		var str = '';
+	Word
+		word: 'dog'
+		letters: [
+			d Letter object
+			o Letter object
+			g Letter object
+		]
+		display: 
+			var str = '';
 
-		for loop over the letter objects and it's going to run the display on each letter object
-			str = str + letter.display();
+			for loop over the letter objects and it's going to run the display on each letter object
+				str = str + letter.display();
 
-		return str
-	init: 
-		loop over the word and create letter objects and push those letter objects into the letters property
+			return str
+		init: 
+			loop over the word and create letter objects and push those letter objects into the letters property
 
 
-d Letter object
-	letter: d
-	found: false
-	display: return _
-o Letter object
-	letter: o
-	found: true
-	display: return o
-g Letter object
-	letter: g
-	found: false
-	display: function 
-		check found 
-			return the letter
-		else
-			return _
+	d Letter object
+		letter: d
+		found: false
+		display: return _
+	o Letter object
+		letter: o
+		found: true
+		display: return o
+	g Letter object
+		letter: g
+		found: false
+		display: function 
+			check found 
+				return the letter
+			else
+				return _
 
 
 
