@@ -2,6 +2,23 @@
 
 This is a work in progress
 
+## What are constructor functions?
+
+constructors let you create similar looking objects from a special function called a constructor function.
+
+## What are prototpes?
+
+Every constructor function has only one prototype. /Users/pavankatepalli/Desktop/git/constructor-review/hangman
+/Users/pavankatepalli/Desktop/git/constructor-review/README.md
+
+Any objects that are created with a constructor function all come from the same prototype.
+
+a prototype is an object that a constructor function inherits from.
+
+## Huh?
+
+...
+
 ## When relating constructors to one another
 
 you need to determine the constructors that you will use
