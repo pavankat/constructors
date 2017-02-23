@@ -47,7 +47,7 @@ Word.prototype.checkWon = function(){
 
 //if a letter is in the word then return true, otherwise return false
 Word.prototype.isLetterInWord = function(lett){
-	return wordObject.word.indexOf(lett) > -1;
+	return this.word.indexOf(lett) > -1;
 }
 
 //let another program use the Word constructor function. All the functions on the prototype will also be exported because the constructor and its prototype are connected by default.
